@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function display() {
+            let now = new Date();
+
+            const hour = now.getHours();
+            const minute = now.getMinutes();
+            const second = now.getSeconds();
+
+            let clock = document.getElementById('clock');
+            clock.innerHTML = `${hour}:${minute}:${second}`;
+        }
+        
+        let InId;
+
+        function displayTime(){
+            InId = setInterval(display, 1000);
+        }
+
+        function stopTime(){
+            clearInterval(InId);
+        }
+    </script>
+</head>
+<body>
+    <h1 id="clock">00:00:00</h1>
+    <button onclick="displayTime()">Start</button>
+    <button onclick="stopTime()">stop</button>
+</body>
+</html>
