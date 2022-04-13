@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function checkHref() {
+            var linkNode = document.getElementById("link");
+            alert(linkNode.href);
+        }
+    </script>
+</head>
+<body onload="checkHref()">
+    <p>Hello</p>
+    <a id="link" href="http://google.com">Link</a>
+</body>
+</html>
