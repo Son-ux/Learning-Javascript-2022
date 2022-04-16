@@ -1,0 +1,35 @@
+.container {
+    width: 50%;
+    margin: auto;
+}
+
+.title {
+    display: block;
+    font-weight: 1.5em;
+    font-weight: bold;
+    margin: 20px 0 20px 0;
+}
+
+table{
+    width: 100%;
+}
+
+th {
+    background-color: rgb(150, 245, 237);
+}
+
+th, td {
+    padding: 5px;
+}
+
+table, th, td {
+    border: 1px solid rgb(3, 172, 184);
+    border-collapse: collapse;
+}
+
+.grand-total {
+    font-size: 1.3em;
+    font-weight: bold;
+    text-align: right;
+    margin-top: 30px;
+}

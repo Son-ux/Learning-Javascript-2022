@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/sellProduct.css">
+    <script src="/js/sellProduct.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="products">
+            <div class="title">Product list</div>
+            <table class="productList">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Product</th>
+                        <th>Price</th>
+                        <th>&nbsp;</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Item 1</td>
+                        <td>$<span class="amount">300</span></td>
+                        <td><button onclick="addToCart(this)">Add</button></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Item 2</td>
+                        <td>$<span class="amount">300</span></td>
+                        <td><button onclick="addToCart(this)">Add</button></td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Item 3</td>
+                        <td>$<span class="amount">300</span></td>
+                        <td><button onclick="addToCart(this)">Add</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <hr>
+        <div class="shopping-card">
+            <div class="title">Your cart</div>
+            <table id="cartItems" class="card-items" style="display: none;">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Product</th>
+                        <th>Price</th>
+                        <th>&nbsp;</th>
+                    </tr>
+                </thead>
+                <tbody id="card-body">
+
+                </tbody>
+            </table>
+            <div id="grandTotal" class="grand-total" style="display: none;">
+                Total: $ <span id="total">400</span>
+            </div>
+            <div id="emptyCart" class="empty-card">
+                Your not have any product
+            </div>
+        </div>
+    </div>
+</body>
+</html>
