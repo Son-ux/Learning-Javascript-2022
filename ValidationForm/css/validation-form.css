@@ -1,0 +1,42 @@
+*{
+    box-sizing: border-box;
+}
+
+.container{
+    margin: auto;
+    box-shadow: 5px 5px #d7dbdb;
+    width: 35%;
+    padding: 10px;
+    border: 1px solid #deeedc;
+}
+
+.title {
+    font-size: 1.6em;
+    font-weight: bold;
+    color: #0e8dc9ee;
+}
+
+.form-group {
+    display: block;
+    margin: 5px;
+}
+
+.form-label {
+    display: block;
+    margin: 5px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 3px;
+}
+
+.border-group {
+    border: 1px solid #dcdce1;
+    padding: 6px;
+}
+
+.invalid {
+    border: 2px solid yellow;
+    box-shadow: 3px 3px 1px yellow;
+}
