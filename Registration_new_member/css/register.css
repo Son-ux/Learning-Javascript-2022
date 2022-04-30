@@ -1,0 +1,40 @@
+*{
+    box-sizing: border-box;
+}
+
+.container{
+    width: 50%;
+    margin: auto;
+    padding: 10px;
+    box-shadow: 1px 1px 1px 1px rgb(175, 187, 166);
+}
+
+.title {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: rgb(134, 175, 101);
+}
+
+.form-group {
+    display: block;
+    margin: 5px;
+}
+
+.form-label {
+    display: block;
+    margin: 0, 5px, 0, 0;
+}
+
+.form-control {
+    width: 100%;
+    padding: 3px;
+    border: 1px solid rgb(42, 192, 235)
+}
+
+.form-national {
+    background-color: transparent;
+}
+
+.invalid {
+    border: 1px solid red;
+}
