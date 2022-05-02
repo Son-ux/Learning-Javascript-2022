@@ -8,15 +8,15 @@
     <link rel="stylesheet" href="/css/slideshow.css">
     <script src="/js/slideshow.js"></script>
 </head>
-<body>
+<body onload="loadImages()">
     <div class="container">
         <div class="title">BO SUU TAP ANH</div>
         <hr>
         <div class="slideshow">
-            <div class="previous">Prev</div>
-            <img src="/images/1.jpg" alt="">
-            <div class="next">Next</div>
-            <div class="caption">Anh 1/3</div>
+            <div class="previous" onclick="previous()">Prev</div>
+            <img src="/images/1.jpg" id="image" alt="">
+            <div class="next" onclick="next()">Next</div>
+            <div class="caption" id="caption">Anh</div>
         </div>
     </div>
 </body>
