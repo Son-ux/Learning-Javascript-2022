@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/order.js"></script>
+    <link rel="stylesheet" href="css/order.css">
+</head>
+<body>
+    <div class="container">
+        <div class="title">Mua Hang</div>
+        <hr>
+        <form action="">
+            <div class="from-group">
+                <label for="" class="form-label">Loc muc gia</label>
+                <select name="" id="priceLevel" class="form-control">
+                    <option value="0">Tat ca</option>
+                    <option value="1">&lt; 100</option>
+                    <option value="2">100 - 200</option>
+                    <option value="3">200 - 300</option>
+                    <option value="4">300 - 400</option>
+                    <option value="5">&gt; 400</option>
+                </select>
+            </div>
+        </form>
+        <hr>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th class="checkColumn">
+                        <input type="checkbox" id="all">
+                    </th>
+                    <th class="nameColumn">Hang Hoa</th>
+                    <th class="priceColumn">Don Gia</th>
+                    <th class="qtyColumn"></th>
+                    <th class="amountColumn">Thanh tien</th>
+                </tr>
+            </thead>
+            <tbody id="tbody">
+                <tr>
+                    <td class="checkColumn">
+                        <input type="checkbox">
+                    </td>
+                    <td>IPhone 7</td>
+                    <td>100</td>
+                    <td>
+                        <input type="text">
+                    </td>
+                    <td>
+                        <span id="amount">200</span>
+                    </td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="4" class="totalLabel">Tong tien</td>
+                    <td><span id="total" class="total">1000</span></td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+</body>
+</html>
