@@ -18,23 +18,23 @@
                 <input type="text" class="form-control" id="idMember">
             </div>
             <div class="form-group">
-                <label for="" class="form-label">Fullname</label>
-                <input type="text" class="form-control">
+                <label for="" class="form-label">Fullname:</label>
+                <input type="text" class="form-control" id="name">
             </div>
             <div class="form-group">
-                <label for="" class="form-label">Email</label>
-                <input type="email" class="form-control">
+                <label for="" class="form-label">Email:</label>
+                <input type="email" id="email" class="form-control">
             </div>
             <div class="form-group">
-                <label for="" class="form-label">Gender</label>
-                <div class="form-control">
+                <label for="" class="form-label">Gender:</label>
+                <div class="form-control" id="genderControls">
                     <input type="radio" name="gender" id=""><span>Male</span>
                     <input type="radio" name="gender" id=""><span>Female</span>
                 </div>
             </div>
             <div class="form-group">
-                <label class="form-label">Hobbies</label>
-                <div class="form-control">
+                <label class="form-label">Hobbies:</label>
+                <div class="form-control" id="hobbiesId">
                     <input type="checkbox" name="hobbies"><span>Read books</span>
                     <input type="checkbox" name="hobbies"><span>Travel</span>
                     <input type="checkbox" name="hobbies"><span>Music</span>
@@ -43,7 +43,7 @@
                 </div>
             </div>
             <div class="form-group">
-                <label class="form-label">National</label>
+                <label class="form-label">National:</label>
                 <select name="" id="national" class="form-control form-national">
                     <option value="" selected>Choose the national</option>
                     <option value="VN">Viet Nam</option>
@@ -54,11 +54,11 @@
                 </select>
             </div>
             <div class="form-group">
-                <div class="form-label">Note</div>
+                <div class="form-label">Note:</div>
                 <textarea class="form-control" id="note" cols="30" rows="10"></textarea>
             </div>
             <hr>
-            <button>REGISTER</button>
+            <button type="button" onclick="validate()">REGISTER</button>
         </form>
     </div>
 </body>
